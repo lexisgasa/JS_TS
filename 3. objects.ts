@@ -1,4 +1,4 @@
-// se declara el tipo con lo que va a contener
+// los objetos en typescript no se declara un su tipo con el " : ", en vez de eso se declara el tipo con lo que va a contener
 // el ? en password significa que es opcional
 type User = {
     firstName: string;
@@ -31,4 +31,7 @@ const userLastName = user.lastName;
 const userAge = user.age;
 
 // destructurando el objeto
-const { firstName, lastName, age } = user 
+// al poner los dos puntos es el nuevo nombre de la variable
+const { firstName, lastName: apellido, age } = user 
+
+const objectCopy = {...user}
